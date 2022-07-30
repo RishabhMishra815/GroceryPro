@@ -1,0 +1,36 @@
+<app-navbar></app-navbar><br><br><br><br>
+<div class="row">
+
+    <div class="col-lg-3">
+        <br>
+    </div>
+    <div class="col-lg-6">
+        <div class="wrapper">
+
+            <h2>New User Register Here:</h2>
+            <hr>
+            <form #registerForm="ngForm" (submit)="onSubmitHandler(registerForm.value)">
+                <div class="form-group">
+                    <label for="">User Name :</label>
+                    <input type="text" name="firstName" class="form-control" ngModel>
+                </div>
+
+                <div class="form-group">
+                    <label for="">Email :</label>
+                    <input type="text" name="email" class="form-control" ngModel>
+                </div>
+                <div class="form-group">
+                    <label for="">Mobile : </label>
+                    <input type="text" name="mobile" class="form-control" ngModel>
+                </div>
+                <div class="form-group">
+                    <label for="">Password :</label>
+                    <input type="text" name="password" class="form-control" ngModel>
+                </div>
+                <input type="submit" class="btn btn-danger  btn-block" value="Register">
+            </form>
+        </div>
+        <div class="col-lg-3">
+
+        </div>
+    </div>

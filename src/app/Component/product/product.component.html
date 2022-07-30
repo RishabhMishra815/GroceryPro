@@ -1,0 +1,15 @@
+<h1 class="text-center" style="font-weight: bolder;"> All categories</h1>
+<div class="row">
+    <div class="col-sm-3" *ngFor="let product of products">
+        <div class="card mb-5">
+            <img src="{{ 'http://rjtmobile.com/grocery/images/' +product.image }}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{ product.productName}}</h5>
+                <p class="card-text"> {{ product.unit }} </p>
+                <h2>{{ product.price | currency : 'INR'}}<span><del>{{ product.mrp }}</del></span></h2>
+                <a href="#" class="btn btn-info">Add to cart</a>
+            </div>
+        </div>
+    </div>
+
+</div>
